@@ -19,7 +19,7 @@ To run this website locally, please follow the steps below:
 
 2. **Clone the Repository**: Use the following command to clone this repository to your local machine:
 
-git clone <repository-url>
+git clone `<repository-url>`
   
 Replace `<repository-url>` with the URL of this repository.
 
