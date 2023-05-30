@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block addl_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result_page.css') }}">
+{% endblock %}
+{% block head %}
+<title>This is the results</title>
+{% endblock %}
+
+
+{% block body %}
+    
+<div
+class="masthead"
+style="background-image: url({{ url_for('static',filename ='img/pexels-photo-4911411.jpeg')}});">
+
+<h1><span id="date-time"></span></h1>
+<div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+
+</div>
+  <div id="container">
+      <span id="text1"></span>
+      <span id="text2"></span>
+  </div>
+
+  <svg id="filters">
+      <defs>
+          <filter id="threshold">
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                      0 1 0 0 0
+                                      0 0 1 0 0
+                                      0 0 0 255 -140" />
+          </filter>
+      </defs>
+  </svg>
+  <!-- <h1>The number of people who already paid 2 xrp so far</h1> -->
+  <p>
+      The number of people (wallet addresses) who have participated so far :<br>
+  </p>
+  <p id="result">{{total_num}}</p>
+  <h1><span id="date-time"></span></h1>
+
+</div>
+<div class="touch">
+  <address class="intouch">
+      Get in touch
+      <a href="mailto:info@send2xrp.com" id="mail" style="text-decoration: none;">
+      info@send2xrp.com
+      </a>
+      
+  </address>
+</div>
+
+
+<script src="{{url_for('static', filename='js/result_page.js')}}"></script>
+
+
+
+
+
+{% endblock %}
