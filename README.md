@@ -1,6 +1,6 @@
-# Website Name
+# SEND2XRP
 
-Welcome to the Website Name repository! This repository contains the source code for a website that utilizes user curiosity to present questions. In order to view the corresponding answers, users are required to submit a transaction of 2 XRP (XRP is a cryptocurrency). Once the program confirms a successful transaction, users are redirected to the answer page.
+Welcome to the Website Name repository! This repository contains the source code for a website that utilizes user curiosity to present question. In order to view the corresponding answer, users are required to submit a transaction of 2 XRP (XRP is a cryptocurrency). Once the program confirms a successful transaction, users are redirected to the answer page.
 
 ## Technologies Used
 
